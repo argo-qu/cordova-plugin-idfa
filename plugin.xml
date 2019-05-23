@@ -34,8 +34,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </platform>
 
     <platform name="android">
-        <preference name="PLAY_SERVICES_VERSION" default="15.0.+"/>
-
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Idfa">
                 <param name="android-package" value="by.chemerisuk.cordova.advertising.IdfaPlugin" />
@@ -48,6 +46,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <dependency id="cordova-support-android-plugin" version="~1.0.0"/>
 
+        <preference name="PLAY_SERVICES_VERSION" default="15.0.0"/>
         <framework src="com.google.android.gms:play-services-ads:$PLAY_SERVICES_VERSION" />
 
         <source-file src="src/android/IdfaPlugin.java"

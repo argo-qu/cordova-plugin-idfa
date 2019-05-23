@@ -34,7 +34,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </platform>
 
     <platform name="android">
-        <preference name="GOOGLE_SERVICES_VERSION" default="15.0.+"/>
+        <preference name="PLAY_SERVICES_VERSION" default="15.0.+"/>
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Idfa">
